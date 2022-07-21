@@ -22,7 +22,7 @@
 
 ![image_20220721_154115](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_154115.png)
 
-> 这里有一个注意点：仓库的名字将会是 `GitHub Pages` 的访问一级路由。比如上边我仓库名字定义为：`lql-notes`，那么配置成功之后的首页访问路径是：https://lql95.github.io/lql-notes，如果你想让首页的访问路径是根，那么只需把仓库名字命名为：`lql95.github.io`。
+> 这里有一个注意点：仓库的名字将会是 `GitHub Pages` 的访问一级路由。比如上边我仓库名字定义为：`lql-notes`，那么配置成功之后的首页访问路径是： https://lql95.github.io/lql-notes  ，如果你想让首页的访问路径是根，那么只需把仓库名字命名为：`lql95.github.io`。
 
 创建完成之后，自己仓库中的项目内容如下：
 
@@ -38,10 +38,66 @@ $ git clone git@github.com:lql95/lql-notes.git
 
 接下来的操作就是将模板中的内容，替换成自己想要的内容，好在模板我已经精简了很多，不需要繁琐的配置，这里简单说明一下：
 
+### 全局替换关键字
 
+![image_20220721_154907](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_154907.png)
 
+这样基本上就搞定了配置内容的一大步，剩下的就是一些修改美化方面的内容了。
 
+### 配置首页
 
-测试嵌入页面：
+首页的配置信息在 `docs/index.md` 这个文件当中，我们可以参照官方文档进行按需配置：[点我去看文档](https://doc.xugaoyi.com/pages/f14bdb/)
 
-<iframe width=600 height=400 src="https://eryajf.github.io/vdoing-template/archives/" scrolling="auto" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+### 配置评论
+
+模板默认内置了vssue的评论组件，也是基于github的issue作为评论的存储数据。
+
+只需两步即可完成配置：
+
+- 第一步：[参考官方文档](https://vssue.js.org/zh/guide/github.html)，创建一个`GitHub OAuth App`。或者不用看官方文档，直接看如下两个步骤。
+
+  [点击此处](https://github.com/settings/applications/new)，进入创建页面：
+
+  ![image_20220721_155930](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_155930.png)
+
+  点击注册之后，就进入到了详情页面，可以看到`Client ID`，点击 `Generate a new client secret` 生成一个秘钥：
+
+  ![image_20220721_160023](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_160023.png)
+
+- 第二步：将配置信息填写到 `docs/.vuepress/config.js` 中。
+
+  ```yaml
+  // vssue 评论插件
+    plugins: [
+      [
+        "vuepress-plugin-vssue-global",
+        {
+          platform: "github",
+          title: "[Comment]<%- frontmatter.title %>",
+          needComments: true,
+          // 其他的 Vssue 配置
+          autoCreateIssue: true,
+          clientId: "d3ec4ca6363950ca41a2",
+          clientSecret: "897465b6393f1d663e6128d2fab6959a0c0333cc",
+          owner: "lql95",
+          repo: "lql-notes",
+        },
+      ],
+    ],
+  ```
+
+现在基本配置项都已经搞定，可以将代码提交上去，然后`GitHub Actions`会自动将代码部署到 `gh-pages` 分支。
+
+## 终极配置
+
+终极配置就是等 GitHub Actions 跑完之后，我们能看到分支当中多了一个 `gh-pages` 分支。
+
+此时点击 `Settings` ---> `Pages`，进行如下配置：
+
+![image_20220721_160920](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_160920.png)
+
+两个配置项，第一个表示选择哪个分支作为静态文件，第二个表示选择前边分支的哪个目录。
+
+点击保存之后，静待一分钟，然后就可以访问上边提供的那个地址了。成本如下：
+
+![image_20220721_161147](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_161147.png)
