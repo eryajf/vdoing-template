@@ -32,4 +32,19 @@ module.exports = {
       },
     ],
   ],
+
+  // 增强 markdown
+  plugins: [
+    [
+      "md-enhance",
+      {
+        // 启用流程图
+        flowchart: true,
+        // Enable mermaid
+        mermaid: true,
+        // 启用 TeX 支持
+        tex: true,
+      },
+    ],
+  ],
 }

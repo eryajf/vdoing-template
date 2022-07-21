@@ -21,7 +21,6 @@ module.exports = [
       },
     },
   ],
-  'vuepress-plugin-mermaidjs',
   [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
