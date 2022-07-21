@@ -1,4 +1,25 @@
-📖 Vdoing博客主题静态部署模板。
+<h1 align="center">vdoing-template</h1>
+
+
+<div align="center">
+
+[![Auth](https://img.shields.io/badge/Auth-eryajf-ff69b4)](https://github.com/eryajf)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/eryajf/vdoing-template)
+[![GitHub Issues](https://img.shields.io/github/issues/eryajf/vdoing-template.svg)](https://github.com/eryajf/vdoing-template/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/eryajf/vdoing-template)](https://github.com/eryajf/vdoing-template/pulls)
+[![GitHub Pull Requests](https://img.shields.io/github/stars/eryajf/vdoing-template)](https://github.com/eryajf/vdoing-template/stargazers)
+[![GitHub license](https://img.shields.io/github/license/eryajf/vdoing-template)](https://github.com/eryajf/vdoing-template/blob/main/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> 📖 Vdoing博客主题静态部署模板。
+    <br>
+</p>
+
+
+🐝 以下仅需简短的几步配置，就可以配置拥有一个免费的个人博客。准备好了吗，来吧！
 
 ## 效果展示
 
@@ -8,13 +29,13 @@
 
 内部文章效果：
 
-
+![image_20220721_165503](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_165503.png)
 
 如果你也想要一个这种效果的博客，请往下看，只需简单几个配置步骤，即可免费拥有。
 
 ## 初始配置
 
-首先点击此仓库右侧的 `Use this template`
+首先访问模板仓库：[vdoing-template](https://github.com/eryajf/vdoing-template)。点击此仓库右侧的 `Use this template`
 
 ![image_20220721_153908](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_153908.png)
 
@@ -98,6 +119,12 @@ $ git clone git@github.com:lql95/lql-notes.git
 
 两个配置项，第一个表示选择哪个分支作为静态文件，第二个表示选择前边分支的哪个目录。
 
-点击保存之后，静待一分钟，然后就可以访问上边提供的那个地址了。成本如下：
+点击保存之后，静待一分钟，然后就可以访问上边提供的那个地址了。成果如下：
 
 ![image_20220721_161147](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_161147.png)
+
+如果一路配置没问题，那么文章也应该会自动加载评论功能：
+
+![image_20220721_165020](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_165020.png)
+
+剩下的就是一些细节的优化调整，稍微打磨之后，就可以愉快地撰写你的博客了。

@@ -31,20 +31,16 @@ module.exports = {
         repo: "vdoing-template",
       },
     ],
+    // 增强 markdown
+    [
+      "md-enhance", {
+        // 启用 TeX 支持
+        tex: true,
+        // Enable mermaid
+        mermaid: true,
+        // 启用流程图
+        flowchart: true,
+      },
+    ],
   ],
-
-  // // 增强 markdown
-  // plugins: [
-  //   [
-  //     "md-enhance",
-  //     {
-  //       // 启用流程图
-  //       flowchart: true,
-  //       // Enable mermaid
-  //       mermaid: true,
-  //       // 启用 TeX 支持
-  //       tex: true,
-  //     },
-  //   ],
-  // ],
 }
