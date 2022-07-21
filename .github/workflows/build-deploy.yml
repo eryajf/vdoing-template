@@ -1,0 +1,30 @@
+name: Build Deploy
+
+# 在main分支发生push事件时触发。
+on:
+  push:
+    branches:
+      - main
+
+env: # 设置环境变量
+  TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          yarn
+          yarn build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        env: # 设置环境变量
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+        with:
+          folder: docs/.vuepress/dist
+          branch: gh-pages # 部署到的分支
