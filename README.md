@@ -17,7 +17,8 @@
 <p align="center"> 📖 Vdoing博客主题静态部署模板。
     <br>
 </p>
-⚗️`功能亮点：`
+
+⚗️功能亮点：
 
 - 三步配置生成一个属于自己的免费个人博客。
 - 使用[Vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing)主题，感谢作者写出如此简洁美观的博客主题。
