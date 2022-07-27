@@ -130,6 +130,8 @@ $ git clone git@github.com:lql95/lql-notes.git
 
 ![image_20220721_161147](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_161147.png)
 
+> 如果你想配置个人自定义域名，可参考此文档：[https://eryajf.github.io/HowToStartOpenSource/pages/06d15f/](https://eryajf.github.io/HowToStartOpenSource/pages/06d15f/)
+
 如果一路配置没问题，那么文章也应该会自动加载评论功能：
 
 ![image_20220721_165020](https://cdn.staticaly.com/gh/eryajf/tu/main/img/image_20220721_165020.png)
