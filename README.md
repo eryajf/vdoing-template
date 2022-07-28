@@ -1,7 +1,5 @@
-<h1 align="center">vdoing-template</h1>
-
-
 <div align="center">
+<h1>vdoing-template</h1>
 
 [![Auth](https://img.shields.io/badge/Auth-eryajf-ff69b4)](https://github.com/eryajf)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/eryajf/vdoing-template)
@@ -12,11 +10,8 @@
 [![HitCount](https://views.whatilearened.today/views/github/eryajf/vdoing-template.svg)](https://github.com/eryajf/vdoing-template)
 [![website eryajf.github.io/vdoing-template](https://img.shields.io/website-up-down-green-red/http/eryajf.github.io/vdoing-template.svg)](https://eryajf.github.io/vdoing-template/)
 
-</div>
+<p align="center"> 📖 Vdoing博客主题静态部署模板 📖</p>
 
-<p align="center"> 📖 Vdoing博客主题静态部署模板。</p>
-
-<div align="center">
 <img src="https://camo.githubusercontent.com/82291b0fe831bfc6781e07fc5090cbd0a8b912bb8b8d4fec0696c881834f81ac/68747470733a2f2f70726f626f742e6d656469612f394575424971676170492e676966" width="800"  height="3">
 </div><br>
 
