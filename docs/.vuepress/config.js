@@ -14,33 +14,4 @@ module.exports = {
   head,
   plugins,
   themeConfig,
-
-  // vssue 评论插件
-  plugins: [
-    [
-      "vuepress-plugin-vssue-global",
-      {
-        platform: "github",
-        title: "[Comment]<%- frontmatter.title %>",
-        needComments: true,
-        // 其他的 Vssue 配置
-        autoCreateIssue: true,
-        clientId: "adb9fb0ac1159e00ce7f",
-        clientSecret: "27da8dc85f808c2bd1b6e44da5ae69c4ddf17d8d",
-        owner: "eryajf",
-        repo: "vdoing-template",
-      },
-    ],
-    // 增强 markdown
-    [
-      "md-enhance", {
-        // 启用 TeX 支持
-        tex: true,
-        // Enable mermaid
-        mermaid: true,
-        // 启用流程图
-        flowchart: true,
-      },
-    ],
-  ],
 }
