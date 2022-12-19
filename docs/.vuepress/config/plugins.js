@@ -35,17 +35,6 @@ module.exports = [
       repo: "vdoing-template",
     },
   ],
-  // 增强 markdown
-  [
-    "md-enhance", {
-      // 启用 TeX 支持
-      tex: true,
-      // Enable mermaid
-      mermaid: true,
-      // 启用流程图
-      flowchart: true,
-    },
-  ],
   [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
