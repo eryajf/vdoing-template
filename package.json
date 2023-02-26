@@ -1,5 +1,5 @@
 {
-  "name": "theme-vdoing-blog",
+  "name": "vdoing-template",
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
