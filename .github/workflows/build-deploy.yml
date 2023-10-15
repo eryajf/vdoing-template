@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 16
       - run: |
-          yarn
+          npm install
           yarn build
 
       - name: Deploy 🚀
